@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- Taskbar -->
 <div class="taskbar">
     <div class="icons">
@@ -29,6 +30,24 @@
                 <span class="hour">17:44</span>
                 <span class="date">25/11/2022</span>
             </div>
+
+            <script>
+                function updateDateTime() {
+                    var now = new Date();
+                    var hours = now.getHours().toString().padStart(2, '0');
+                    var minutes = now.getMinutes().toString().padStart(2, '0');
+                    var day = now.getDate().toString().padStart(2, '0');
+                    var month = (now.getMonth() + 1).toString().padStart(2, '0'); // Month is 0-indexed
+                    var year = now.getFullYear();
+        
+                    document.querySelector('.hour').textContent = hours + ':' + minutes;
+                    document.querySelector('.date').textContent = day + '/' + month + '/' + year;
+                }
+                
+                // Update the time and date every minute
+                updateDateTime();
+                setInterval(updateDateTime, 60000);
+            </script>
             <a href="#notifications" id="notifications"><i class="far fa-bell"></i></a>
             <a href="#" class="clear disabled"></a>
             <a href="#" id="return"></a>
@@ -61,7 +80,7 @@
                 <span>Recycle bin</span></a>
         </div>
         <div class="icon-desktop">
-            <a target="_blank" href="https://pump.fun/2xgfk45awnyt232ktWG4xNytYL3S3LSLzBctyeMjn3fN">
+            <a target="_blank" href="https://pump.fun/profile/Ai1CTa6rBWo7xM75Uyw6Ex2L5wGXcgTKE9zAbdYYLp4W">
                 <img src="https://i.hizliresim.com/lsrsmmp.png" alt="">
                 <span>Pump.fun</span>
             </a>
@@ -207,7 +226,7 @@
             <!-- Bookmarks -->
 
         </div>
-        <iframe src="https://pump.fun/2xgfk45awnyt232ktWG4xNytYL3S3LSLzBctyeMjn3fN" frameborder="0" width="895px" height="404px"></iframe>
+        <iframe src="https://pump.fun/profile/Ai1CTa6rBWo7xM75Uyw6Ex2L5wGXcgTKE9zAbdYYLp4W" frameborder="0" width="895px" height="404px"></iframe>
     </div>
 </div>
 
