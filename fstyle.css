@@ -1,0 +1,57 @@
+.container {
+    font-family: "Segoe UI", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1173aa;
+    color: #fefeff;
+}
+
+.error404 {
+    width: 50vw;
+    font-weight: 300;
+
+    &__icon {
+        display: block;
+        font-size: 10vw;
+        margin-bottom: 2.5vw;
+        font-weight: normal;
+    }
+
+    &__text {
+        font-size: 1.9vw;
+        line-height: 1.5;
+        margin-bottom: 3vw;
+    }
+
+    &__status {
+        font-size: 1.9vw;
+        margin-bottom: 3vw;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        .qr-code {
+            img {
+                width: 12vw;
+                height: 12vw;
+                margin-right: 1.5vw;
+            }
+        }
+
+        .info-text {
+            font-size: 1.5vw;
+            line-height: 1.5;
+
+            &--small {
+                font-size: 1.1vw;
+                margin-top: 2vw;
+            }
+        }
+    }
+}
