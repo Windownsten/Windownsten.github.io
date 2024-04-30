@@ -1,0 +1,20 @@
+# Ignore files with extension `.class` & `.sm`
+*.o
+*.so
+*.dll
+*.out
+*.app
+*.exe
+*.map
+*.arcs
+
+logs/*.txt
+
+# Ignore a file without extension
+sharedmap
+sharedmap.exe
+smcleaner
+smcleaner.exe
+
+main.html
+crash.html
